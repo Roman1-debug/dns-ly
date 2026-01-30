@@ -129,13 +129,13 @@ def main():
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
-  dnsly example.com                    # Query A records
-  dnsly example.com -t MX              # Query MX records
-  dnsly example.com -t A,AAAA,MX       # Query multiple record types
-  dnsly example.com -t ALL             # Query all common record types
-  dnsly example.com -o json            # Output as JSON
-  dnsly example.com -v                 # Verbose output
-  dnsly example.com -q                 # Quiet mode (no banner)
+  dns-ly example.com                    # Query A records
+  dns-ly example.com -t MX              # Query MX records
+  dns-ly example.com -t A,AAAA,MX       # Query multiple record types
+  dns-ly example.com -t ALL             # Query all common record types
+  dns-ly example.com -o json            # Output as JSON
+  dns-ly example.com -v                 # Verbose output
+  dns-ly example.com -q                 # Quiet mode (no banner)
 
 Supported Record Types:
   A, AAAA, CNAME, MX, NS, TXT, SOA, PTR
