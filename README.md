@@ -13,18 +13,18 @@
 
 A professional DNS reconnaissance tool designed for cybersecurity professionals and penetration testers. Perform comprehensive DNS lookups with beautiful, colored output and multiple export formats.
 
-## ✨ Features
+## Features
 
-- 🎯 **Multiple Record Types**: Query A, AAAA, CNAME, MX, NS, TXT, SOA, and PTR records
-- 🎨 **Beautiful Output**: Rich, colored terminal output with tables and progress indicators
-- 📊 **Multiple Formats**: Export results as human-readable text or JSON
-- ⚡ **Fast & Reliable**: Built on dnspython for robust DNS resolution
-- 🔧 **Flexible Queries**: Query single or multiple record types in one command
-- 🛡️ **Professional**: Designed to look and feel like real pentesting tools
-- 📝 **Verbose Mode**: Detailed output for debugging and analysis
-- 🤫 **Quiet Mode**: Minimal output for scripting and automation
+- **Multiple Record Types**: Query A, AAAA, CNAME, MX, NS, TXT, SOA, and PTR records
+- **Beautiful Output**: Rich, colored terminal output with tables and progress indicators
+- **Multiple Formats**: Export results as human-readable text or JSON
+- **Fast & Reliable**: Built on dnspython for robust DNS resolution
+- **Flexible Queries**: Query single or multiple record types in one command
+- **Professional**: Designed to look and feel like real pentesting tools
+- **Verbose Mode**: Detailed output for debugging and analysis
+- **Quiet Mode**: Minimal output for scripting and automation
 
-## 📦 Installation
+## Installation
 
 ### From Source
 
@@ -46,7 +46,7 @@ python setup.py install
 - dnspython >= 2.4.0
 - rich >= 13.0.0
 
-## 🚀 Usage
+## Usage
 
 ### Basic Usage
 
@@ -109,7 +109,7 @@ $ dns-ly example.com -t A,AAAA -o json > results.json
 $ dns-ly example.com -q -o json | jq '.records[]'
 ```
 
-## 📖 Command-Line Options
+## Command-Line Options
 
 ```
 usage: dns-ly [-h] [-t RECORD_TYPE] [-o {text,json}] [-v] [-q] [--version] domain
@@ -128,7 +128,7 @@ optional arguments:
   --version             show program's version number and exit
 ```
 
-## 🎯 Supported Record Types
+## Supported Record Types
 
 | Type | Description |
 |------|-------------|
@@ -141,7 +141,7 @@ optional arguments:
 | SOA | Start of authority records |
 | PTR | Pointer records (reverse DNS) |
 
-## 🎨 Output Examples
+## Output Examples
 
 ### Text Output (Default)
 ```
@@ -169,7 +169,7 @@ Records Found: 1
 }
 ```
 
-## 🛠️ Development
+## Development
 
 ### Project Structure
 
@@ -199,20 +199,20 @@ dns-ly github.com -t ALL
 dns-ly example.com -o json
 ```
 
-## 📝 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 👤 Author
+## Author
 
 **Roman**
 - GitHub: [@Roman1-debug](https://github.com/Roman1-debug)
 
-## 🤝 Contributing
+## Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-## ⭐ Show Your Support
+## Show Your Support
 
 Give a ⭐️ if this project helped you!
 
