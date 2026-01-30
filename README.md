@@ -26,18 +26,37 @@ A professional DNS reconnaissance tool designed for cybersecurity professionals 
 
 ## Installation
 
-### From Source
+### Method 1: Using pipx (Recommended)
+
+**pipx** installs Python CLI tools in isolated environments, preventing conflicts.
+
+```bash
+# Install pipx (if not already installed)
+sudo apt install pipx        # Debian/Ubuntu/Kali
+brew install pipx            # macOS
+
+# Ensure pipx is in PATH
+pipx ensurepath
+
+# Install dns-ly
+git clone https://github.com/Roman1-debug/dns-ly.git
+cd dns-ly
+pipx install .
+```
+
+### Method 2: From Source (Virtual Environment)
 
 ```bash
 # Clone the repository
 git clone https://github.com/Roman1-debug/dns-ly.git
 cd dns-ly
 
-# Install with pip
-pip install -e .
+# Create and activate virtual environment
+python3 -m venv venv
+source venv/bin/activate
 
-# Or using setup.py
-python setup.py install
+# Install with pip
+pip install .
 ```
 
 ### Requirements
